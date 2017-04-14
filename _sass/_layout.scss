@@ -36,9 +36,10 @@
         padding-top: 16px;
         text-align: center;
         text-transform: uppercase;
-        margin-right: 16px;
+        
         max-width: calc(800px - (30px * 2));
-
+margin-right: auto;
+    margin-left: auto;
         .menu-icon {
             display: none;
         }
