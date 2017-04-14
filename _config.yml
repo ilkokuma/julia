@@ -19,8 +19,8 @@ links:
     url:          /archive
     external:     false
     external:     false
-  - name:         GitHub
-    url:          https://ilkokuma.github.io/julia
+  - name:         Arama
+    url:          /arama
     external:     true
 
 # Build settings
