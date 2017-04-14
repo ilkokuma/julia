@@ -1,13 +1,16 @@
 /* Site Header
  * ============================================== */
     .site-header {
-            border-top: 5px solid #418ec0;
+            border-top: 5px solid #F5D133;
     border-bottom: 1px solid #e8e8e8;
         height: 55px;
         background-color: #F5F5F5;
         position: relative;
         width: 100%;
-        background-color: #418ec0;
+        background-color: #fff;
+        box-shadow: 0 7px 15px -8px rgba(122,122,122,0.4);
+    margin-bottom: 6px;
+}
 
     }
 
