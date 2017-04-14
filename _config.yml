@@ -21,7 +21,7 @@ links:
     external:     false
   - name:         Arama
     url:          /arama
-    external:     true
+    external:     false
 
 # Build settings
 markdown: kramdown
