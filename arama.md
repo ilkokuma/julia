@@ -1,9 +1,9 @@
 ---
 layout: page
-title: arama
-comments: false
-modified: 2016-02-01
+title: About
+permalink: /arama/
 ---
+
 
 <script>
   (function() {
