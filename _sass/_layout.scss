@@ -37,6 +37,7 @@
         text-align: center;
         text-transform: uppercase;
         margin-right: 16px;
+        max-width: calc(800px - (30px * 2));
 
         .menu-icon {
             display: none;
