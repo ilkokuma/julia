@@ -9,6 +9,8 @@ layout: main
     {% for post in site.posts %}
     <li>
         <div>
+            <i aria-hidden='true' class='fa fa-angle-double-right'></i>
+            
         <a class="post-link" href="{{ site.url }}{{ post.url}}">{{ post.title }}</a>
             <span class="post-date">{{ post.date | date_to_long_string }}</span>
         </div>
