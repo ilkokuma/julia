@@ -1,21 +1,28 @@
- — -
-layout: home
-title: Jekyll Pagination
-excerpt: “Working example of jekyll pagination”
-blogfeed: true
- — -
-<h3><a href=”{{ site.url}}/posts/”>Recent Posts</a></h3>
-{% for post in paginator.posts %}
-<article>
- {% if post.link %}
- <h2 class=”link-post”><a href=”{{ site.url }}{{ post.url }}” title=”{{ post.title }}”>{{ post.title }}</a> <a href=”{{ post.link }}” target=”_blank” title=”{{ post.title }}”><i class=”fa fa-link”></i></h2>
- {% else %}
- <h2><a href=”{{ site.url }}{{ post.url }}” title=”{{ post.title }}”>{{ post.title }}</a></h2>
- <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
- {% endif %}
-</article>
-{% endfor %}
-{% if paginator.total_pages > 1 %}
+---
+layout: main
+---
+
+<div class="home">
+    
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+        <div>
+            <i aria-hidden='true' class='fa fa-angle-double-right'></i>
+            
+        <a class="post-link" href="{{ site.url }}{{ post.url}}">{{ post.title }}</a>
+            <span class="post-date">{{ post.date | date_to_long_string }}</span>
+        </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+    
+    
+    
+    
+  {% if paginator.total_pages > 1 %}
 <div class=”pagination”>
  <ul>
 {% if paginator.previous_page %}
@@ -31,3 +38,22 @@ blogfeed: true
  </ul>
 </div>
 {% endif %}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="footer center">
+        Built with Jekyll using
+        <a href="https://github.com/kuoa/julia" target="_blank">Julia</a>
+        theme
+    </div>
+</div>
